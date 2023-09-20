@@ -46,6 +46,7 @@ li a {
   width: 100%;
   left: 30px;
   margin-left: 5px;
+  align-items: center;
 }
 .sidebar:hover + .main {
   transition: margin-left 0.75s ease;
@@ -67,6 +68,14 @@ h3 {
   text-align: center;
 }
 p{text-align: center;}
+
+.button {
+  border-radius: 8px;
+}
+.exemple {
+  margin-left: 20%;
+  margin-right: 20%;
+}
 
 
 
