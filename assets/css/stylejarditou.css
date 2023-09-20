@@ -1,0 +1,163 @@
+
+body {
+	padding: 0 20px;
+    margin-top: 20px;
+    background-color: color-mix(in srgb, white 70%, rgb(79, 56, 56) 30%);
+
+   }
+.flex {
+    display: flex;
+}
+/*Haut de Page*/
+header{
+    margin-bottom: 1%;
+    align-items: center;
+    background-color: white;
+}
+
+/*logo jarditou*/
+.one {
+    width: 25%;
+}
+
+/*Tout le jardin*/
+.two {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 180%;
+    width: 75%;
+    justify-content: space-around;
+}
+
+/*onglet navigation*/
+.nav-list {
+    color :white;
+    background-color:black;
+    font-size: 22px;
+    padding:15px;
+}
+    a:link {
+  color: #ffffff;
+}
+    a:visited {
+  color: #ffffff;
+}
+.nav-list-item {
+    text-decoration: none;
+    font-size: 100%;
+    margin-left: 15px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+  }
+#box {
+    margin-top: 0.5% ;
+    margin-bottom: 0.5%;
+} 
+
+/*PROMOTION*/
+.promo{
+    width: 100%;
+}
+h1{
+    margin-left: 3%;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.content {
+    font-size: 22px;
+	width: 70%;
+    background-color: #ffffff;
+}
+h2 {
+    margin-left: 2%;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+p {
+    margin-left: 1%;
+}
+
+aside {
+    width: 30%;
+    background-color: gray
+} 
+
+/*Tableau*/
+
+table {
+    border-width:1px; 
+    border-style:solid; 
+    border-color:black;
+    width:100%;
+    text-align: center;
+    }
+   td { 
+    background-color: #ffffff;
+    padding: 0;
+    border-width:1px;
+    border-style:solid; 
+    border-color:rgb(0, 0, 0);
+    width:15%;
+    text-align: center;
+    }
+    tr {
+        background-color: #ffffff;
+    }
+.itb {
+    width: 100%;
+    height: auto;
+} 
+
+.error {
+    font-size: small;
+    color: red;
+ }
+
+#subject {
+    margin-top: 0.5%;
+    width: 99%;
+    height: 10vh;
+    border-radius:8px;
+}
+
+.formu{
+    display: inline-block;
+    width: 30%;
+    background-color: whitesmoke;
+    border-radius:20px;
+}
+.labelo {
+    display: inline-block;
+    width: 20%;
+}
+
+#form {
+    background-color: white;
+    border-radius:20px;
+}
+#form1 {
+    align-items: center;
+    background-color: lightgray;
+    border-radius:8px;
+}
+
+@media only screen and (max-width: 768px) {
+.content {
+    width:100%;
+}
+aside {
+    display: none;
+}
+
+/*onglet navigation*/
+.nav-list {
+    width: 100%;
+    flex-direction: column;
+    color :white;
+    background-color:black;
+    font-size: 130%;
+    padding:0%;
+}
+}
+/*Fin*/

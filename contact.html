@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Formulaire</title>
+    <link rel="icon" href="assets/img/jarditou_logo.jpg">
+    <link rel="stylesheet" href="assets/css/stylejarditou.css">
+  </head>
+
+<body>
+    <header class="flex">     <!--Entete-->
+        <img class="one" id="one" src="assets/img/jarditou_logo.jpg" alt="jarditou_logo">
+        <p class="two flex" id="two">Tout le jardin</p>
+    </header>     <!--Fin Entete-->
+        <nav typeof="SiteNavigationElement">      <!--Menu Navigation-->
+            <ul class="nav-list flex">
+                <li><a class="nav-list-item" href="index.html">Accueil</a></li>
+                <li><a class="nav-list-item" href="exercice1.html">Exercice 1</a></li>
+                <li><a class="nav-list-item" href="exercice2.html">Exercice 2</a></li>
+                <li><a class="nav-list-item" href="exercice3.html">Exercice 3</a></li>
+                <li><a class="nav-list-item" href="exercice4.html">Exercice 4</a></li>
+                <li><a class="nav-list-item" href="#">Exercice 5</a></li>
+            </ul>
+            <img class="promo" src="assets/img/promotion.jpg" alt="promotion">      <!--Banderole Promo-->
+        </nav>      <!--Fin Menu Navigation-->
+    <hr>
+        <form action="http://bienvu.net/script.php" method="post" id="contactForm" novalidate>    
+            <fieldset id="form">
+                <h4><b>* </b>Ces zones sont obligatoires.</h4>
+                <fieldset class="form1">
+                    <legend>Vos Coordonnées</legend>
+                        
+                        <label for="nom" class="labelo" >Votre nom<b>* </b>: </label>
+                        <input required type="text" name="nom" id="nom" class="formu"><br>
+                            <span id="nomError" class="error"></span><br>
+                        
+                        <label for="prenom" class="labelo">Votre prénom<b>* </b>: </label>
+                        <input required type="text" name="prenom" id="prenom" class="formu"><br>
+                            <span id="prenomError" class="error"></span><br>
+                        
+                            <label for="ddn" class="labelo">Date de naissance : </label>
+                            <input type="date" name="ddn" id="ddn" class="formu"><br><br>
+                        
+                        <span class="labelo">Sexe : </span>
+                            <input type="radio" name="sexe" value="Féminin" required id="sexeFeminin"><label for="sexeFeminin"> Feminin</label>
+                            <input type="radio" name="sexe" value="Masculin" required id="sexeMasculin"><label for="sexeMasculin"> Masculin</label><br><br>
+
+                        <label for="cp" class="labelo">Code postal<b>* </b>: </label>
+                        <input required type="number" name="cp" id="cp" class="formu"><br>
+                            <span id="cpError" class="error"></span><br>
+                    
+                        <label for="adresse" class="labelo">Adresse : </label>
+                        <input type="text" name="adresse" id="adresse" class="formu"><br><br>
+                        
+                        <label for="ville" class="labelo">Ville<b>*</b> : </label>
+                        <input type="text" name="ville" id="ville" class="formu"><br>
+                            <span id="villeError" class="error"></span><br>
+                        
+                        <label for="email" class="labelo">Email<b>* </b>: </label>
+                        <input required type="email" name="email" id="email" placeholder="dave.loper@afpa.fr" class="formu"><br>
+                            <span id="emailError" class="error"></span><br>
+                    </fieldset>   
+            <br>
+            <fieldset class="form1">
+                <legend>Votre demande</legend>
+                    <span class="labelo">Sujet : </span>
+                <select id="demande" class="formu" name="sujet" required> 
+                    <option value="" selected disabled>Veuillez séléctionner un sujet</option>
+                    <option value="commandes" id="commande">Mes commandes</option>
+                    <option value="question" id="question">Question sur un produit</option>
+                    <option value="réclamation" id="reclamation">Réclamation</option>
+                    <option value="autres" id="autre">Autres</option>
+                </select><br><br>
+                    <span class="labelo">Votre question : </span><br>
+                <span>
+                    <textarea class="formu" id="subject" name="subject" placeholder="Je souhaiterez avoir des informations concernant la Promotion sur les lames de terrasse."></textarea>
+                </span>  
+            </fieldset>
+            <h4><input type="checkbox" name="conditions" value="j'accepte le traitement informatique de ce formulaire" required id="conditions">
+                <b>* </b>J'accepte le traitement informatique de ce formulaire.<br>
+                <span id="conditionsError" class="error"></span>
+            </h4>
+                <input type="submit">
+                <input type="reset" value="Annuler">
+            </fieldset>
+        </form>
+            <hr>
+    <footer class="footer">
+        <ul class="nav-list flex">
+            <li><a href="#" class="nav-list-item">Mention légales</a></li>
+            <li><a href="#" class="nav-list-item">Horaires</a></li>
+            <li><a href="#" class="nav-list-item">Plan du site</a></li>       
+        </ul>
+    </footer>
+    <script src="assets/js/exercice5.js"></script>
+</body>
+</html>

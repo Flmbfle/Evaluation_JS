@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 3 JavaScript</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <li>
+                    <a href="index.html">Accueil</a>
+                </li>
+                <li>
+                    <a href="exercice1.html">Exercice 1</a>
+                </li>
+                <li>
+                    <a href="exercice2.html">Exercice 2</a>
+                </li>
+                <li>
+                    <a href="#">Exercice 3</a>
+                </li>
+                <li>
+                    <a href="exercice4.html">Exercice 4</a>
+                </li>
+                <li>
+                    <a href="contact.html">Exercice 5</a>
+                </li>
+            </ul>
+        </nav>
+        <main class="main">
+        <div>
+            <h1>Exercice 2 :</h1><h3>Gestion de prénoms</h3> <!--Titre-->
+            <div class="ex3-content">
+                <label for="prenomInput">Prénom : </label>
+                <input type="text" id="prenomInput" placeholder="Entrez un prénom"><br>
+                <button onclick="ajouterPrenom()">Ajouter</button>
+                <button onclick="supprimerPrenom()">Supprimer</button>
+            </div>
+            <h2>Liste des prénoms</h2>
+                <ul id="listePrenoms">
+                    <!-- La liste des prénoms sera affichée ici -->
+                </ul>
+            <p id="messageAjout"></p>
+            <p id="messageSuppression"></p>
+        </div>
+        </main>
+    </div>
+    <script src="assets/js/exercice3.js"></script>
+</body>
+</html>

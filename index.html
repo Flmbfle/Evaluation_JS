@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <li>
+                    <a href="#">Accueil</a>
+                </li>
+                <li>
+                    <a href="exercice1.html">Exercice 1</a>
+                </li>
+                <li>
+                    <a href="exercice2.html">Exercice 2</a>
+                </li>
+                <li>
+                    <a href="exercice3.html">Exercice 3</a>
+                </li>
+                <li>
+                    <a href="exercice4.html">Exercice 4</a>
+                </li>
+                <li>
+                    <a href="contact.html">Exercice 5</a>
+                </li>
+            </ul>
+        </nav>
+        <main class="main">
+                <h1>Evaluation Javascript pour les groupes TB</h1>
+            <div>
+                <h2>Exercice 1 : Calcul du nombre de jeunes, de moyens et de vieux</h2>
+                    <p>Il s'agit de dénombrer les personnes d'âge strictement inférieur à 20 ans, les personnes d'âge strictement supérieur à 40 ans et celles dont l'âge est compris entre 20 ans et 40 ans (20 ans et 40 ans y compris).</p>
+                    <p>Le programme doit demander les âges successifs.</p>
+                    <p>Le comptage est arrêté dès la saisie d'un centenaire. Le centenaire est compté.</p> 
+                    <p>Donnez le programme Javascript correspondant qui affiche les résultats.</p>
+            </div>
+            <div>
+                <h2>Exercice 2 : Table de multiplication</h2>
+                    <p>Ecrivez une fonction qui affiche une table de multiplication.</p>
+                    <p>Votre fonction doit prendre un paramètre qui permet d'indiquer quelle table afficher.</p>
+                    <p>Par exemple, TableMultiplication(7) doit afficher :</p>
+                    <p>1 x 7 = 7</p>
+                    <p>2 x 7 = 14</p>
+                    <p>3 x 7 = 21 ...</p>
+            </div>
+            <div>
+                <h2>Exercice 3 : Recherche d'un prénom</h2>
+                    <p>Un prénom est saisi au clavier. On le recherche dans le tableau tab donné ci-après.</p>
+                    <p>Si le prénom est trouvé, on l'élimine du tableau en décalant les cases qui le suivent, et en mettant à blanc la dernière case. Si le prénom n'est pas trouvé un message d'erreur apparait et aucun prénom ne se supprime.</p>
+                    <img src="assets/img/exemple.png" alt="exemple">
+                    <p>( exemple : ["Audrey", "Aurélien", "Flavien", "Jérémy", "Laurent", "Melik", "Nouara", "Salem", "Samuel", " "]; )</p>
+            </div>
+            <div>
+                <h2>Exercice 4 : Total d'une commande</h2>
+                    <p>À partir de la saisie du prix unitaire noté PU d'un produit et de la quantité commandée QTECOM, afficher le prix à payer PAP, en détaillant la remise REM et le port PORT, sachant que :</p>
+                <ul>
+                    <li>TOT = ( PU * QTECOM )</li>
+                    <li>la remise est de 5% si TOT est compris entre 100 et 200 € et de 10% au-delà</li>
+                    <li>le port est gratuit si le prix des produits ( le total remisé ) est supérieur à 500 €. Dans le cas contraire, le port est de 2%</li>
+                    <li>la valeur minimale du port à payer est de 6 €</li>
+                </ul>
+                    <p>Testez tous les cas possibles afin de vous assurez que votre script fonctionne.</p>
+                    <p><strong>Ci-dessous, un jeu de tests :</strong></p>
+                <ul>
+                    <li>Saisir 600 € et quantité = 1 : remise 10% (-60 €) soit 540,00 et frais port = 0; à payer : 540 €</li>
+                    <li>Saisir 501 € et quantité = 1 : remise 10% (-50,1 €) soit 450,90 et frais port 2% (de 450,90 €) soit +9,01 € ; à payer : 450,90+9.01 = 459,91 €.</li>
+                    <li>Saisir 100 € et quantité = 2 : 200 € donc remise 5% soit 190 € et frais de port 2% soit 3,8 € mini 6 €; à payer : 190+6 = 196 €</li>
+                    <li>Saisir 3 € et quantité = 1 : remise 0, frais de port 2% soit 0.06 € donc le minimum de 6 € s'applique; à payer : 3+6 = 9 €</li>
+                </ul>
+            </div>
+            <div>
+                <h2>Exercice 5 : vérification d'un formulaire</h2>
+                    <p>Effectuez le contrôle de saisie de votre formulaire Jarditou en Javascript.</p>
+                    <p>Les points suivants devront être respectés :</p>
+                <ul>
+                    <li>Lorsqu'une erreur est détectée, l'utilisateur doit en être informé grâce à l'affichage d'un message sous le champ concerné<br></li>
+                    <li>Le formulaire ne peut être envoyé que lorsque les données saisies par l'utilisateur sont correctes<br></li>
+                    <li>Création d'un fichier JavaScript pour la vérification du formulaire de la page contact.html</li>
+                    <li>Utilisation cohérente d'expressions régulières sur le formulaire</li>
+                </ul>
+            </div>
+        </main>
+    </div>
+    
+</body>
+</html>
+

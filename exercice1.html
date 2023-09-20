@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 1 JavaScript</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <li>
+                    <a href="index.html">Accueil</a>
+                </li>
+                <li>
+                    <a href="#">Exercice 1</a>
+                </li>
+                <li>
+                    <a href="exercice2.html">Exercice 2</a>
+                </li>
+                <li>
+                    <a href="exercice3.html">Exercice 3</a>
+                </li>
+                <li>
+                    <a href="exercice4.html">Exercice 4</a>
+                </li>
+                <li>
+                    <a href="contact.html">Exercice 5</a>
+                </li>
+            </ul>
+        </nav>
+        <main class="main">
+            <h1>Exercice 1 :</h1> <h3>Calcul du nombre de jeunes, de moyens et de vieux</h3>
+            <button onclick="comptage()">Commencer le calcul</button>
+            <div id="results" style="display:none;">
+                <p>Personnes de moins de 20 ans : <span id="moins20">0</span></p>
+                <p>Personnes entre 20 et 40 ans (y compris) : <span id="entre20et40">0</span></p>
+                <p>Personnes de plus de 40 ans : <span id="plus40">0</span></p>
+            </div>
+        </main>
+    </div>   
+    <script src="assets/js/exercice1.js"></script>
+</body>
+</html>
