@@ -1,17 +1,21 @@
 body {
   background-color: #999;
-  overflow: auto ;
   height: auto;
 }
+
 .sidebar ul{
   padding-left: 20px;
   padding-right: 16px;
   text-align: center;
 }
 .sidebar li {
-  list-style-type: none;
+
   padding-top: 20%;
   font-size: large;
+}
+
+li {
+  list-style-type: none;
 }
 li a {
   text-decoration: none;
@@ -33,9 +37,10 @@ li a {
 
 .container {
   display: flex;
-  height: auto;
+  width: 100%;
   transition: margin-left 0.75s ease;
   margin-left: 0;
+
 }
 
 /* Appliquer l'effet de déplacement au contenu au survol de la sidebar */
@@ -47,6 +52,8 @@ li a {
   left: 30px;
   margin-left: 5px;
   align-items: center;
+  text-align: center;
+  align-content: center;
 }
 .sidebar:hover + .main {
   transition: margin-left 0.75s ease;
@@ -59,12 +66,15 @@ img {
 
 h1 {
   text-align: center;
+  font-size: 48px;
 }
 h2 {
+  font-size: 30px;
   margin-top: 40px;
   text-align: center;
 }
 h3 {
+  font-size: 25px;
   text-align: center;
 }
 p{text-align: center;}
@@ -77,5 +87,9 @@ p{text-align: center;}
   margin-right: 20%;
 }
 
+.exercice {
+  border-top: 2px black solid;
+  margin-top: 2% ;
+}
 
 

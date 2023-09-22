@@ -32,7 +32,11 @@
         </nav>
         <main class="main">
             <h1>Exercice 1 :</h1> <h3>Calcul du nombre de jeunes, de moyens et de vieux</h3>
-            <button onclick="comptage()" class="button">Commencer le calcul</button>
+            <label for="ageInput">Entrez l'âge de la personne :</label>
+            <input type="text" id="ageInput">
+            <button id="calculButton" class="button">Commencer le calcul</button>
+            <button id="resetButton">Nouvelle série</button>
+
             <div id="results" style="display:none;">
                 <p>Personnes de moins de 20 ans : <span id="moins20">0</span></p>
                 <p>Personnes entre 20 et 40 ans (y compris) : <span id="entre20et40">0</span></p>

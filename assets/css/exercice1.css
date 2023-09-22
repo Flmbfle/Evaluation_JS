@@ -1,0 +1,55 @@
+body {
+    background-color: #999;
+    overflow: auto ;
+    height: auto;
+  }
+.sidebar ul{
+    padding-left: 20px;
+    padding-right: 16px;
+    text-align: center;
+  }
+
+  .sidebar li {
+    list-style-type: none;
+    padding-top: 20%;
+    font-size: large;
+  }
+  li a {
+    text-decoration: none;
+    color: #999;
+    display: block;
+  }
+  .sidebar {
+    width: 100%;
+    left: 2px;
+    width: 20px;
+    background-color: #222;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    transition: width 0.75s ease, margin-right 0.75s ease;
+  }
+
+  .container {
+    display: flex;
+    height: auto;
+    transition: margin-left 0.75s ease;
+    margin-left: 0;
+  }
+  
+  /* Appliquer l'effet de déplacement au contenu au survol de la sidebar */
+  .sidebar:hover {
+    width: 200px;
+  }
+  .main {
+    width: 100%;
+    left: 30px;
+    margin-left: 5px;
+    align-items: center;
+    text-align: center;
+  }
+  .sidebar:hover + .main {
+    transition: margin-left 0.75s ease;
+  }
